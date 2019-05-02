@@ -1,0 +1,26 @@
+
+body{
+	background-position:center;
+	background-size:cover;
+	height:100vh;
+	font-family: sans-serif;
+	padding:(70px,30px);
+}
+.login-page{
+	width: 320px;
+	height:420px;
+	padding:10% 0 0;
+	color: olive;
+	margin: auto;
+	position:absolute;
+	/*top:10%;*/
+	left:40%;
+	transform:transplate(-50%,-50%);
+	box-sizing:border-box;
+}
+.form button:hover,.form button:active{
+	background:#43A047;
+}
+.form .register-form{
+	display: none;
+}

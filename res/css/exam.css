@@ -1,0 +1,174 @@
+html,body{
+    color: #252B2A;
+    /*text-align: center;*/
+    font-size: 22px;
+    margin: 0px;
+    padding: 0px;
+	font-family: 'Sarabun', sans-serif;
+	background-color: #eeeeee;
+  }
+
+ .box{
+    border: solid 2px black;
+    
+    padding: 10px;
+ }
+ .box-shadow{
+    box-shadow: 2px 4px #888888;
+ }
+  #exam{
+    /*background-color: aqua;*/
+    width: 98%;
+    min-height:90vh;
+    height: fit-content;   
+    padding: 10px;
+  }
+
+  #question-answer{
+      /*background-color: red;*/
+      width: 68%;
+      height: auto;
+      margin-top: 50px;
+  }
+  #questions{
+      /*background-color: blue;*/
+      width: 100%;
+      min-height: 150px;
+      height: fit-content;
+  }
+  #answers{
+    /*background-color: green;*/
+    width: 100%;
+    height: fit-content;
+  }
+  #question-attempt{
+    /*background-color: yellow;*/
+    width: 28%;
+    height: auto;
+    margin-top: 50px;
+  }
+  #symbols{
+    /*background-color: orange;*/
+    min-height:200px;height: fit-content;
+  }
+
+  #question-mark{
+    /*background-color: orchid;*/
+    height:auto;
+    text-align: center;
+  }
+
+  .mark{
+      padding: 10px;
+      margin: 10px;
+      border: solid 2px black;
+      border-radius: 100px;
+      width: 50px;
+      height: 50px;
+      font-size: 22px;
+      font-weight: bold;
+      display: inline-block; 
+  }
+  .button{
+      margin: 10px;
+      font-size: 23px;
+     
+  }
+  .mark:hover, .button:hover{
+      background-color: #252B2A;
+      color:white;
+  }
+
+input{
+    margin-top: 12px;
+    margin-bottom: 12px;
+
+}
+.all-button{
+    margin-top:20px;
+    color:white;
+    background-color: #242B2D;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    border: 0px;
+    font-size: 21px;
+}
+.all-button:hover{
+    background-color: #ACDB01;
+    color: #252B2A;
+    font-weight: bold;
+    box-shadow: 1px 1px black;
+}
+.sample-mark{
+    /*padding: 10px;
+    margin: 10px;*/
+    border: solid 2px    black;
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+    font-weight: bold;
+    float: right;
+}
+.sample-div{
+    height: 50px;
+    width: 100%;
+    margin-top: 5px;
+    
+}
+
+/*Visited Questions Button*/
+#visited{
+    background-color: #252B2A;
+    color:white;
+}
+
+/*Attempted Questions Button*/
+#attempted{
+    background-color: rgb(10, 102, 10);
+    color:white;
+}
+#mark-review{
+    background-color: rgb(9, 9, 209);
+    color:white;
+}
+
+.flex-container {
+    display: flex;
+  }
+.flex-direction-column {
+    flex-direction: column;
+  }
+.flex-direction-row {
+    flex-direction: row;
+  }
+
+.margin-10{
+    margin: 10px;
+}
+#container{
+    margin-top: -2px;
+    background-color: white !important;
+ }
+
+/*
+ #nav-bar a{
+    visibility: hidden;
+ }
+ */
+ /*Mainly for mobile*/
+ @media (max-width:700px) {
+
+#question-answer{
+    /*background-color: red;*/
+    margin-top: 150px;
+}
+#container{
+    margin-top: -1px;
+ }
+
+ }
+ 
+ span{
+     float: left;
+ }

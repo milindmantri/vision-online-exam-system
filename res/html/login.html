@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="./res/css/login.css" />
+<div class="login-page" method="post">    
+<div id="form">
+        <div id="form-selector" class="flex-container">
+                <div class="selector" id="login-select" style="background: #ACDB01; box-shadow:1px 1px #242B2D;"><a id="login-text" style="color : #252B2A; font-weight:bold;" href="#" onclick="openLoginPage()">Login</a></div>
+                <div class="selector" id="register-select"><a id="register-text"  href="#" onclick="openRegistrationPage()">Register</a></div>
+            </div>
+    <div id="login-register-section">
+    <form class="register-form" id="registration-form" style="display:none" onsubmit="return validation();">    
+      <p>Username</p>
+      <input type="text" placeholder="Enter UserName" id="name" />
+      <br>
+      <p>Email-Id</p>
+      <input type="text" placeholder="Enter Email Id" id="emailid" />
+      <br>
+      <p>Password</p>
+      <input type="text" placeholder="Enter Password" id="password" />
+      <br>
+      <p>Confirm Password</p>
+      <input type="text" placeholder="Re-enter Password" id="passwordagain" />
+      <br>
+      <p>Phone no</p>
+      <input type="text" placeholder="Enter phone no" id="phoneno" />
+      <br />
+      <br />
+      <button class="all-button">Submit</button>
+    </form>
+
+    <form class="login-form" id="login-form">
+      <p>Username</p>
+      <input type="text" placeholder="Enter Username" />
+      <p>Password</p>
+      <input type="text" placeholder="Enter Password" />
+
+      <br />
+      <br />
+      <button class="all-button">Submit</button>
+      <br />
+      
+    </form>
+  </div>
+  </div>
+</div>
