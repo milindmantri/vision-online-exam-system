@@ -34,9 +34,3 @@ for(var i in test_list) {
 
 updateTest();
 
-function hello()
-{
-    var exam_button = document.getElementById("start-test");
-    exam_button.style.visibility="display";
-}
-

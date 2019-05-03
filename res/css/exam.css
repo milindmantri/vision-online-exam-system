@@ -114,8 +114,8 @@ input{
     height: 50px;
     width: 100%;
     margin-top: 5px;
-    
 }
+
 
 /*Visited Questions Button*/
 #visited{
@@ -150,6 +150,10 @@ input{
     margin-top: -2px;
     background-color: white !important;
  }
+ span{
+    float: left;
+}
+
 
 /*
  #nav-bar a{
@@ -158,17 +162,36 @@ input{
  */
  /*Mainly for mobile*/
  @media (max-width:700px) {
-
+html,body{
+    font-size: 16px;
+}
 #question-answer{
     /*background-color: red;*/
-    margin-top: 150px;
+    margin-top: 100px;
+    width: 80%;
+}
+#question-attempt {
+    /*background-color: red;*/
+    margin-top: 10px;
+    text-align: center;
+    width: 80%;
 }
 #container{
     margin-top: -1px;
  }
 
+.flex-direction-row {
+    flex-direction: column;
+  }
+#questions{
+    min-height: 50px;
+}
+.mark,.button,.sample-mark,.all-button{
+    font-size: 17px;
+}
+#exam {
+    align-items: center;
+    justify-items: center;
+  }
  }
  
- span{
-     float: left;
- }

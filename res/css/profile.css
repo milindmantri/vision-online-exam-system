@@ -22,3 +22,11 @@
 .display-title div, .display-value div{
     margin: 5px;
 }
+
+@media (max-width:700px) {
+    html,#profile{
+        font-size: 16px;
+    }
+    
+    
+}
