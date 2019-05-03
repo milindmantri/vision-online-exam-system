@@ -1,11 +1,38 @@
-function myFunction() {
-    document.getElementById("demo").style.display = 'block';
-    document.getElementById("demo1").style.display = 'none';
+function loginActive(){
+  var login_text= document.getElementById("login-text");
+  var login=document.getElementById("login-select");;
+  var register=document.getElementById("register-select");;
+  var register_text=document.getElementById("register-text");;
+
+  login_text.style.color="#242B2D";
+  login.style.background= "#ACDB01";
+  login.style.boxShadow="box-shadow:1px 1px #242B2D";
+  register_text.style.color="white";
+  register.style.background="#242B2D";  
+}
+function registerActive(){
+  var login_text= document.getElementById("login-text");
+  var login= document.getElementById("login-select");
+  var register= document.getElementById("register-select");
+  var register_text= document.getElementById("register-text");;
+
+  register.style.color="#242B2D";
+  register.style.background= "#ACDB01";
+  register.style.boxShadow="box-shadow:1px 1px #242B2D";
+  /*Change back to original color*/
+  login_text.style.color="white";
+  login.style.background="#242B2D";  
+}
+function openLoginPage() {
+    document.getElementById("login-form").style.display = 'block';
+    document.getElementById("registration-form").style.display = 'none';
+    loginActive();
   }
   
-  function myFunction1() {
-    document.getElementById("demo1").style.display = 'block';
-    document.getElementById("demo").style.display = 'none';
+  function openRegistrationPage() {
+    document.getElementById("registration-form").style.display = 'block';
+    document.getElementById("login-form").style.display = 'none';
+    registerActive();
   }
   function validation() {
     var name = document.getElementById("name").value;
