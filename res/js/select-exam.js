@@ -1,5 +1,42 @@
-var list = document.getElementById("select-list");
-items =  [ "rocky","singh"];
-for(var i in items) {
-  list.add(new Option(items[i]));
+var request = new XMLHttpRequest();
+request.open("GET", "./res/data/subjects.json", false);
+request.send(null)
+var obj = JSON.parse(request.responseText);
+
+
+let subject_list = Object.keys(obj["subjects"]);
+//console.log(subject_list);
+let add_select_subject = document.getElementById("select-subject");
+for(var i in subject_list) {
+    add_select_subject.add(new Option(subject_list[i]));
 }
+
+function updateTest(){
+var selected_subject = document.getElementById("select-subject");
+//console.log(selected_subject.value);
+let test_list = obj["subjects"][selected_subject.value];
+//console.log(test_list);
+let add_test_subject = document.getElementById("select-test");
+
+var length = add_test_subject.options.length;
+
+for(i = length - 1 ; i >= 0 ; i--)
+{
+    add_test_subject.remove(i);
+}
+
+for(var i in test_list) {
+    add_test_subject.add(new Option(test_list[i]));
+  }
+  // display value property of select list (from selected option)
+//console.log( selected_subject.value );
+}
+
+updateTest();
+
+function hello()
+{
+    var exam_button = document.getElementById("start-test");
+    exam_button.style.visibility="display";
+}
+

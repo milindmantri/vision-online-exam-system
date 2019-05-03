@@ -74,7 +74,9 @@ padding-left: 10px;
 	font-weight: 530;
 	box-shadow: 2px 2px black;
 }
-
+.all-button a:hover{
+	color:black;
+}
 input{
 	border: 2px solid  #ACDB01;
 	border-radius: 5px;

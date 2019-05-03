@@ -13,17 +13,23 @@
     <?php
     include "./res/html/header.html";
     ?>
-    <div class="select-container">
-        <div id="subject">
-            <select id="select-list">
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
-                <option value="mercedes">Mercedes</option>
-                <option value="audi">Audi</option>
-            </select>
+        <div class="subject-container">
+            <div class="main-container">
+            <?php
+            include "./res/html/profile.html";
+            ?>
+            <p id="choose-subject-text">Choose Subject</p>
+            <div id="subject" class="padding-top">
+                <select id="select-subject" class="color-button" onchange="updateTest()">
+                </select>
+                <select id="select-test" class="color-button">
+                </select>
+                <button id="start-test" class="color-button" onclick="location.href = './exam.php';">Start Test </button>
+            </div>
         </div>
     </div>
     <script src="./res/js/select-exam.js" type="text/javascript"></script>
+    
 </body>
 
 </html>

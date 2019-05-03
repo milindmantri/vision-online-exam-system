@@ -7,8 +7,8 @@
             </div>
     <div id="login-register-section">
     <form class="register-form" id="registration-form" style="display:none" onsubmit="return validation();">    
-      <p>Username</p>
-      <input type="text" placeholder="Enter UserName" id="name" />
+      <p>Full Name</p>
+      <input type="text" placeholder="Enter Full Name" id="name" />
       <br>
       <p>Email-Id</p>
       <input type="text" placeholder="Enter Email Id" id="emailid" />
@@ -23,18 +23,18 @@
       <input type="text" placeholder="Enter phone no" id="phoneno" />
       <br />
       <br />
-      <button class="all-button">Submit</button>
+      <input type="button" class="all-button" value="Submit">
     </form>
 
     <form class="login-form" id="login-form">
-      <p>Username</p>
-      <input type="text" placeholder="Enter Username" />
+      <p>Email-Id</p>
+      <input type="text" placeholder="Enter Email-Id" />
       <p>Password</p>
       <input type="text" placeholder="Enter Password" />
 
       <br />
       <br />
-      <button class="all-button">Submit</button>
+      <input type="button" class="all-button" onclick="location.href = './select-exam.php';" value="Submit">  
       <br />
       
     </form>
