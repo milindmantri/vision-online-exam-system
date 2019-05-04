@@ -2,10 +2,7 @@ body{
   margin: 0px;
   padding: 0px;
 }
-div{
-    /*margin: -2px;*/
-    /*padding: 1px;*/
-  }
+
 #header{
     padding-top: 0;
     padding-bottom: 5px;
@@ -63,16 +60,16 @@ div{
 
 
   */
-
+/*
   @media (max-width:775px) {
      #header-img{
       width: 120px;
     }
   }
-  
+  */
   
   /*Mainly for mobile*/
-  @media (max-width:700px) {
+  @media only screen and  (max-width:700px) {
 
     #header-img{
      width: 150px;

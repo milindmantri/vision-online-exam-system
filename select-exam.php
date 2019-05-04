@@ -24,6 +24,7 @@
                 </select>
                 <select id="select-test" class="color-button">
                 </select>
+                <br>
                 <button id="start-test" class="color-button" onclick="location.href = './exam.php';">Start Test </button>
             </div>
         </div>

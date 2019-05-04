@@ -54,3 +54,6 @@ function openLoginPage() {
       return true;
     }
   }
+
+  registerActive()
+  loginActive();

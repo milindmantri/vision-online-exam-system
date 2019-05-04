@@ -1,0 +1,49 @@
+.main-container{
+    padding-top: 100px;
+    margin-left: 20px;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+}
+
+.margin-20{
+    margin: 20px 5px 20px 5px;
+
+}
+
+#upload-question{
+    display: flex;
+    flex-direction: row;
+}
+.give-height{
+    min-height: 50px;   
+    
+}
+
+input[type="text"] {
+
+    border: 2px solid #ACDB01;
+    border-radius: 5px;
+    padding: 7px 3px 7px 3px;
+
+}
+.all-button {
+
+    color: white;
+    background-color: #242B2D;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    border: 0px;
+    font-size: 21px;
+}
+
+.all-button:hover{
+	background-color: #ACDB01;;
+	color:black;
+	font-weight: 530;
+    box-shadow: 2px 2px black;
+    border: solid 1px #242B2D;
+}
