@@ -20,7 +20,6 @@
 }
 .give-height{
     min-height: 50px;   
-    
 }
 
 input[type="text"] {
@@ -46,4 +45,35 @@ input[type="text"] {
 	font-weight: 530;
     box-shadow: 2px 2px black;
     border: solid 1px #242B2D;
+}
+
+@media (max-width:700px) {
+    html,#profile{
+        font-size: 15px;
+    }
+
+    .all-button {
+        font-size: 15px;
+    }
+    .main-container{
+        padding-top: 170px;
+    }
+    #upload-question{
+        min-width: 60px;
+        font-size:14px;
+    }
+    #upload-value div{
+        padding-top: 2px;
+    }
+    .give-height{
+        min-height: 70px;   
+    }
+    .margin-20{
+        margin: 10px 5px 10px 5px;
+    
+    }
+    
+    
+
+    
 }

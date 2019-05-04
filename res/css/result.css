@@ -4,6 +4,8 @@
     border: solid 2px black;
     border-radius: 5px;
     padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .main-container{
@@ -66,6 +68,26 @@
     html,#profile{
         font-size: 16px;
     }
-    
+
+    #result-text, #print-button button{
+        font-size: 16px;
+    }
+    .main-container{
+        margin-top: 170px;
+    }
+    .display-title div, .display-value div{
+        font-size: 15px;
+    }
+    .padding-10{
+        padding: 3px;
+    }
+    .display-title{
+        padding-right: 2px;
+    }
+    #result-text{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
     
 }

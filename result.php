@@ -13,7 +13,7 @@
     <?php
     include_once './res/html/header.html';
     ?>
-    <div style="text-align:center;">
+    <div style="text-align:center; margin:1px; padding:1px; ">
     <div class="main-container" style="display:inline-block; text-align:left; ">
 
         <div id="result">

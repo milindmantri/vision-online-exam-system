@@ -7,7 +7,7 @@ function loginActive(){
   login_text.style.color="#242B2D";
   login_text.style.fontWeight="bold";
   login.style.background= "#ACDB01";
-  login.style.boxShadow="box-shadow:1px 1px #242B2D";
+  login.style.boxShadow="1px 1px #242B2D";
   
   register_text.style.color="white";
   register_text.style.fontWeight="normal";
@@ -22,7 +22,7 @@ function registerActive(){
   register_text.style.color="#242B2D";
   register_text.style.fontWeight="bold";
   register.style.background= "#ACDB01";
-  register.style.boxShadow="box-shadow:1px 1px #242B2D";
+  register.style.boxShadow="1px 1px #242B2D";
   /*Change back to original color*/
   login_text.style.fontWeight="normal";
   login_text.style.color="white";
