@@ -11,6 +11,7 @@ for(var i in subject_list) {
     add_select_subject.add(new Option(subject_list[i]));
 }
 
+/*Update the test when the subjects are selected*/
 function updateTest(){
 var selected_subject = document.getElementById("select-subject");
 //console.log(selected_subject.value);
@@ -34,3 +35,10 @@ for(var i in test_list) {
 
 updateTest();
 
+
+function displayProfile(name,email,phone,accountType){
+    document.getElementById("display-name").innerHTML=name;
+    document.getElementById("display-email").innerHTML=email;
+    document.getElementById("display-phone").innerHTML=phone;
+    document.getElementById("display-account-type").innerHTML=accountType;
+}

@@ -1,43 +1,82 @@
 <link rel="stylesheet" href="./res/css/login.css" />
-<div class="login-page" method="post">    
-<div id="form">
-        <div id="form-selector" class="flex-container">
-                <div class="selector" id="login-select" style="background: #ACDB01; box-shadow:1px 1px #242B2D;"><a id="login-text" style="color : #252B2A; font-weight:bold;" href="#" onclick="openLoginPage()">Login</a></div>
-                <div class="selector" id="register-select"><a id="register-text"  href="#" onclick="openRegistrationPage()">Register</a></div>
-            </div>
+
+<div class="login-page" method="post">
+  <div id="form">
+    <div id="form-selector" class="flex-container">
+      <div
+        class="selector"
+        id="login-select"
+        style="background: #ACDB01; box-shadow:1px 1px #242B2D;"
+        onclick="openLoginPage()"
+      >
+        <a
+          id="login-text"
+          style="color : #252B2A; font-weight:bold;"
+          href="#"
+          onclick="openLoginPage()"
+          >Login</a
+        >
+      </div>
+      <div class="selector" id="register-select" onclick="openRegistrationPage()">
+        <a id="register-text" href="#" onclick="openRegistrationPage()"
+          >Register</a
+        >
+      </div>
+    </div>
     <div id="login-register-section">
-    <form class="register-form" id="registration-form" style="display:none" onsubmit="return validation();">    
-      <p>Full Name</p>
-      <input type="text" placeholder="Enter Full Name" id="name" />
-      <br>
-      <p>Email-Id</p>
-      <input type="text" placeholder="Enter Email Id" id="emailid" />
-      <br>
-      <p>Password</p>
-      <input type="text" placeholder="Enter Password" id="password" />
-      <br>
-      <p>Confirm Password</p>
-      <input type="text" placeholder="Re-enter Password" id="passwordagain" />
-      <br>
-      <p>Phone no</p>
-      <input type="text" placeholder="Enter phone no" id="phoneno" />
-      <br />
-      <br />
-      <input type="button" class="all-button" value="Submit">
-    </form>
+      <div class="form-container">
+      <form
+        class="register-form"
+        id="registration-form"
+        style="display:none"
+        name= 'register-form' 
+        method='post'
+      >
+        <p>Full Name</p>
+        <input type="text" placeholder="Enter Full Name" id="name" name="name" required/>
+        <br />
+        <p>Email-Id</p>
+        <input type="email" placeholder="Enter Email ID" id="emailid" name="email" required/>
+        <br />
+        <p>Password</p>
+        <input type="password" placeholder="Enter Password" id="password" name="password" onkeyup="check();"  required/>
+        <br />
+        <p>Confirm Password</p>
+        <input type="password" placeholder="Confirm Password" id="confirmPassword" onkeyup="check();" name="confirmPassword" required />
+        <div id='message' style="margin:0; padding:5px; padding-left:10px; font-size: 14px; text-align: left;"></div>
+  
+        <p>Phone no</p>
+        <input type="text" placeholder="Enter phone no" id="phoneno" name="phone" required />
+        <div style="margin-top:20px;">
+          <span>Account type: </span>
+          <select name="accountType" id="" class="account-type">
+            <option value="Student"  selected>Student</option>
+            <option value="Faculty">Faculty</option>
+          </select>
+        </div>
+        <br />
+        <br />
+        <input name="register-submit" type="submit" class="all-button" value="Submit" />
+      </form>
 
-    <form class="login-form" id="login-form">
-      <p>Email-Id</p>
-      <input type="text" placeholder="Enter Email-Id" />
-      <p>Password</p>
-      <input type="text" placeholder="Enter Password" />
-
-      <br />
-      <br />
-      <input type="button" class="all-button" onclick="location.href = './select-exam.php';" value="Submit">  
-      <br />
-      
-    </form>
+      <form name="login-form" class="login-form" id="login-form" method="post">
+        <p>Email-Id</p>
+        <input name="email" type="email" placeholder="Enter Email ID"  required/>
+        <p>Password</p>
+        <input name="password" type="password" placeholder="Enter Password" required />
+        <br />
+        <br />    
+        <input
+          name="login-submit"
+          type="submit"
+          class="all-button"
+          value="Submit"
+        />
+        <br />
+        </form>
+        <!--snackbar to display status of registration / login-->
+        <div id="snackbar"></div> 
+    </div>
   </div>
   </div>
 </div>

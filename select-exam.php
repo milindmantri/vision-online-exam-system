@@ -29,8 +29,16 @@
             </div>
         </div>
     </div>
+
     <script src="./res/js/select-exam.js" type="text/javascript"></script>
+
+
     
 </body>
 
 </html>
+<?php
+session_start();
+$row = $_SESSION['user'];
+echo "<script> displayProfile('$row[1]','$row[2]','$row[4]','$row[5]'); </script>";
+?>

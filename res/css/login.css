@@ -17,7 +17,7 @@ html,body{
 }
 
 #form{
-    box-shadow: 2px 1px 2px 1px #242B2D;
+    box-shadow: 2px 1px 2px 1px #bbbbbb;
 	height: auto;
 	width: auto;
     margin: 15% 11% 5% 11%;
@@ -72,7 +72,7 @@ padding-left: 10px;
 	background-color: #ACDB01;;
 	color:black;
 	font-weight: 530;
-	box-shadow: 2px 2px black;
+	box-shadow: 2px 2px #242B2D;
 }
 .all-button a:hover{
 	color:black;
@@ -89,6 +89,27 @@ p{
 	margin-bottom: 7px;
 }
 
+.account-type{
+    margin-top:10px;
+    color:white;
+    background-color: #242B2D;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    border: 0px;
+    font-size: 19px;
+}
+.account-type:hover{
+	background-color: #cccccc;
+	color: black;
+	font-weight: 530;
+	box-shadow: 2px 2px #242B2D;
+}
+
+.form-container{
+	margin: auto;
+	width: min-content;
+}
+
 
 @media (max-width:700px) {
 	#form{
@@ -96,6 +117,7 @@ p{
 	}
 	.login-page{
 		width: 300px;
+		width: 85%;
 	}
 	input{
 		width: 100%;
@@ -105,12 +127,21 @@ p{
 	}
 	input{
 		font-size: 16px;
+				
 	}
 	html,body{
 		font-size: 16px;
 	}
-	.login-page{
-		width: 85%;
+	.login-form, .register-form{
+		padding-left: 5px;
+		padding-right: 10px;
+	}
+	.account-type{
+		font-size: 21px;
+	}
+	.form-container{
+		margin: auto;
+		width: 100%;
 	}
 
 }

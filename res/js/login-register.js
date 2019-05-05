@@ -39,21 +39,22 @@ function openLoginPage() {
     document.getElementById("login-form").style.display = 'none';
     registerActive();
   }
-  function validation() {
-    var name = document.getElementById("name").value;
-    var emailid = document.getElementById("emailid").value;
-    var passward = document.getElementById("passward").value;
-    var passwardagain = document.getElementById("passwardagain").value;
-    var phoneno = document.getElementById("phoneno").value;
-    if (name == "") {
-      alert('name field requird');
-      document.getElementById("name").style.bordorcolor = "red";
-      return false;
-    }
-    else {
-      return true;
-    }
-  }
 
+  function check() {
+      $password = document.getElementById('password');
+      $confirmPassword = document.getElementById('confirmPassword');
+      $message = document.getElementById('message');
+      if($password.value=="" && $confirmPassword.value==""){
+        $message .innerHTML = '';
+      }
+      else if ($password.value == $confirmPassword.value) {
+        $message.style.color = 'rgb(85, 105, 10)';
+        $message .innerHTML = '*password matched';
+      } else {
+        $message.style.color = 'red';
+        $message .innerHTML = '*password do not match';
+      }
+      
+  }
   registerActive()
   loginActive();
