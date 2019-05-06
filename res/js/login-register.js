@@ -41,20 +41,35 @@ function openLoginPage() {
   }
 
   function check() {
-      $password = document.getElementById('password');
-      $confirmPassword = document.getElementById('confirmPassword');
-      $message = document.getElementById('message');
-      if($password.value=="" && $confirmPassword.value==""){
+      var password = document.getElementById('password');
+      var confirmPassword = document.getElementById('confirmPassword');
+      var message = document.getElementById('message');
+      if(password.value=="" && confirmPassword.value==""){
         $message .innerHTML = '';
       }
-      else if ($password.value == $confirmPassword.value) {
-        $message.style.color = 'rgb(85, 105, 10)';
-        $message .innerHTML = '*password matched';
+      else if (password.value == confirmPassword.value) {
+        message.style.color = 'rgb(85, 105, 10)';
+        message .innerHTML = '*password matched';
       } else {
-        $message.style.color = 'red';
-        $message .innerHTML = '*password do not match';
+        message.style.color = 'red';
+        message .innerHTML = '*password do not match';
       }
-      
   }
+
+  function checkPhone() {
+    var phone = document.getElementById('phoneno').value;
+    var message = document.getElementById('message-number');
+    console.log();
+    if(isNaN(phone) || phone.length<10 || phone.length>10){
+      message.style.color = 'red';
+      message.innerHTML = '*Please enter a valid 10 digit phone number';
+    }
+   else {
+      console.log(phone);
+      message.innerHTML = '';
+    }
+}
+
+
   registerActive()
   loginActive();

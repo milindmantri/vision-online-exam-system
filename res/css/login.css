@@ -110,6 +110,14 @@ p{
 	width: min-content;
 }
 
+.message{
+	margin:0; 
+	padding:5px; 
+	padding-left:10px; 
+	font-size: 14px; 
+	text-align: left;
+}
+
 
 @media (max-width:700px) {
 	#form{
@@ -135,9 +143,6 @@ p{
 	.login-form, .register-form{
 		padding-left: 5px;
 		padding-right: 10px;
-	}
-	.account-type{
-		font-size: 21px;
 	}
 	.form-container{
 		margin: auto;

@@ -1,6 +1,9 @@
 .main-container{
     padding-top: 100px;
-    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
 }
 
 .flex-container{
@@ -17,6 +20,19 @@
 #upload-question{
     display: flex;
     flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    padding-left: 10%;
+}
+#upload-label{
+    text-align: left;
+}
+#upload-value{
+    text-align: left;
+    padding-left: 20px; 
 }
 .give-height{
     min-height: 50px;   
@@ -72,8 +88,7 @@ input[type="text"] {
         margin: 10px 5px 10px 5px;
     
     }
-    
-    
-
-    
+    #upload-question{
+        padding-left: 1%;
+    }    
 }

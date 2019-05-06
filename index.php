@@ -9,14 +9,15 @@
     Login and Registration Page
   </title>
   <link rel="stylesheet" href="./res/css/style.css" />
-  <link rel="stylesheet" href="./res/css/snackbar.css" />
   <script src="./res/js/login-register.js"></script>
+
+  <link rel="stylesheet" href="./res/css/snackbar.css" />
   <script src="./res/js/snackbar.js"></script>
 </head>
 
 <body>
   <?php
-  include "./res/html/header.html";
+  include "./res/html/header-index.html";
   echo "<br>";
   include "./res/html/login.html";
   ?>

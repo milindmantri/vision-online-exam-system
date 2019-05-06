@@ -35,7 +35,7 @@
         <p>Full Name</p>
         <input type="text" placeholder="Enter Full Name" id="name" name="name" required/>
         <br />
-        <p>Email-Id</p>
+        <p>Email-ID</p>
         <input type="email" placeholder="Enter Email ID" id="emailid" name="email" required/>
         <br />
         <p>Password</p>
@@ -43,10 +43,12 @@
         <br />
         <p>Confirm Password</p>
         <input type="password" placeholder="Confirm Password" id="confirmPassword" onkeyup="check();" name="confirmPassword" required />
-        <div id='message' style="margin:0; padding:5px; padding-left:10px; font-size: 14px; text-align: left;"></div>
+        <div id= "message" class='message'></div>
   
         <p>Phone no</p>
-        <input type="text" placeholder="Enter phone no" id="phoneno" name="phone" required />
+        <input type="text" placeholder="Enter phone no" id="phoneno" name="phone" onkeyup="checkPhone();" required />
+        <div id= "message-number" class='message'></div>
+
         <div style="margin-top:20px;">
           <span>Account type: </span>
           <select name="accountType" id="" class="account-type">

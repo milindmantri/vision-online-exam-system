@@ -11,21 +11,23 @@
 
 <body>
     <?php
-    include "./res/html/header.html";
+    include "./res/html/header-logout.html";
     ?>
         <div class="subject-container">
             <div class="main-container">
             <?php
             include "./res/html/profile.html";
             ?>
+            <div style="text-align: center;">
             <p id="choose-subject-text">Choose Subject</p>
-            <div id="subject" class="padding-top">
-                <select id="select-subject" class="color-button" onchange="updateTest()">
+            </div>
+            <div id="subject" class="padding-top" style="text-align: center;">
+                <select  id="select-subject" class="color-button" onchange="updateTest()">
                 </select>
-                <select id="select-test" class="color-button">
+                <select  id="select-test" class="color-button">
                 </select>
                 <br>
-                <button id="start-test" class="color-button" onclick="location.href = './exam.php';">Start Test </button>
+                <button id="start-test"  class="color-button" onclick="location.href = './exam.php';">Start Test </button>
             </div>
         </div>
     </div>
@@ -41,4 +43,5 @@
 session_start();
 $row = $_SESSION['user'];
 echo "<script> displayProfile('$row[1]','$row[2]','$row[4]','$row[5]'); </script>";
+include_once './res/php/navigation.php';
 ?>

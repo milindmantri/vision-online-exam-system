@@ -12,9 +12,10 @@
 
 <body>
     <?php
-    include_once './res/html/header.html';
+    include_once './res/html/header-logout.html';
     ?>
     <div class="main-container">
+        <div style="display: flex ; flex-direction: column; text-align: center; align-items: center;">
         <?php
         include_once './res/html/profile.html';
         ?>
@@ -28,7 +29,10 @@
                     </div>
 
                     <div id="upload-value" class="margin-20">
-                        <div class="give-height "> <input  type="file" name="fileToUpload" id="fileToUpload"  accept=".csv"> </div>
+                        <div class="give-height "> 
+                            <input  type="file" name="fileToUpload" id="fileToUpload"  accept=".csv"> 
+                    
+                        </div>
                         <div class="give-height">
                             <select id="select-subject" class="color-button " onchange="updateTest()"> </select>
                         </div>
@@ -39,10 +43,13 @@
                     </div>
                     
                 </div>
+                <div style="text-align: center;">
                 <div class="margin-20" style="margin-top: 1px;"> <input class="all-button" type="submit" value="Upload Paper" name="submit"></div>
+                </div>
             </form>
         </div>
     </div>
+</div>
     <script src="./res/js/select-exam.js"></script>
 </body>
 
@@ -52,4 +59,5 @@
 session_start();
 $row = $_SESSION['user'];
 echo "<script> displayProfile('$row[1]','$row[2]','$row[4]','$row[5]'); </script>";
+include_once './res/php/navigation-faculty.php';
 ?>

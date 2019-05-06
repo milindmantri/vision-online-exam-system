@@ -55,6 +55,15 @@ body{
       align-self: center;
   }
 
+
+  #logout-button{
+    border: solid 2px white;
+}
+#logout-button:hover{
+    border: solid 2px black;
+    background-color: #ACDB01;
+    color: #242B2D !important;
+}
   /*
   grey #252B2A;
 
@@ -81,6 +90,7 @@ body{
       flex-direction: column;
       justify-content: center;
       width: 100%;
+     
     }
     #header{
       flex-direction: column;
