@@ -1,15 +1,8 @@
-{"subjects":{
-    "Data Structures":[
-        "DS Test 1","DS Test 2","DS Test 3"
-    ],
-    "Algorithms":[
-        "A Test 1","A Test 2","A Test 3"
-    ],
-    "DBMS":[
-        "DBMS Test 1","DBMS Test 2","DBMS Test 3"
-    ],
-    "Computer Networks":[
-        "CN Test 1","CN Test 2","CN Test 3"
-    ]
-}
+{
+  "subjects": {
+    "Data Structures": [],
+    "Algorithms": [],
+    "DBMS": [],
+    "Computer Networks": []
+  }
 }

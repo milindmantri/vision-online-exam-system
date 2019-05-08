@@ -21,14 +21,14 @@
             <div style="text-align: center;">
             <p id="choose-subject-text">Choose Subject</p>
             </div>
-            <div id="subject" class="padding-top" style="text-align: center;">
+            <form id="subject" class="padding-top" method="post" style="text-align: center;">
                 <select  id="select-subject" class="color-button" onchange="updateTest()">
                 </select>
                 <select  id="select-test" class="color-button">
                 </select>
                 <br>
                 <button id="start-test"  class="color-button" onclick="location.href = './exam.php';">Start Test </button>
-            </div>
+            </form>
         </div>
     </div>
 
