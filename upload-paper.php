@@ -43,15 +43,12 @@
                         <div class="give-height">
                             <input type="text" name="test-name" required>
                         </div>
-                       
                     </div>
-                    
                 </div>
-                <div style="text-align: center;">
-                <div class="margin-20" style="margin-top: 1px;"> 
-                    <input class="all-button" type="submit" value="Upload Paper" name="upload-paper"></div>
+                <div class="give-height">
+                    <input class="all-button margin-20" style="margin-top: 1px; text-align: center;" type="submit" value="Upload Paper" name="upload-paper">
                 </div>
-            </form>
+                </form>
         </div>
     </div>
 </div>

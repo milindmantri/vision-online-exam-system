@@ -1,7 +1,7 @@
 <?php
 $link=$_GET['link'];
 if ($link == '1'){
-    header("Location: ./upload-questions.php");
+    header("Location: ./upload-paper.php");
 }
 if ($link == '2'){
     header("Location: ./sample-tests.php");

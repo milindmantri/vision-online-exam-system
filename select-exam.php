@@ -22,26 +22,26 @@
             <p id="choose-subject-text">Choose Subject</p>
             </div>
             <form id="subject" class="padding-top" method="post" style="text-align: center;">
-                <select  id="select-subject" class="color-button" onchange="updateTest()">
+                <select  id="select-subject" name="subject-name" class="color-button remove-default-appearance" onchange="updateTest()">
                 </select>
-                <select  id="select-test" class="color-button">
+                <select  id="select-test" name="test-name" class="color-button remove-default-appearance">
                 </select>
                 <br>
-                <button id="start-test"  class="color-button" onclick="location.href = './exam.php';">Start Test </button>
+                <input type="submit" id="start-test" name="start-test"  class="color-button" value="Start Test">
             </form>
         </div>
     </div>
 
-    <script src="./res/js/select-exam.js" type="text/javascript"></script>
-
-
-    
+    <script src="./res/js/select-exam.js" type="text/javascript"></script>    
 </body>
-
 </html>
+
+
 <?php
 session_start();
 $row = $_SESSION['user'];
 echo "<script> displayProfile('$row[1]','$row[2]','$row[4]','$row[5]'); </script>";
 include_once './res/php/navigation.php';
+
+include_once './res/php/select-exam/start-test.php';
 ?>

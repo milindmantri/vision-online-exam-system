@@ -15,7 +15,7 @@ if (isset($_POST['login-submit'])) {
         if($row[5]=="Student")
           header("Location: ./select-exam.php");
         else
-          header("Location: ./upload-questions.php");
+          header("Location: ./upload-paper.php");
         //exit;
       } else
         echo "<script> callSnackBar('Password Incorrect'); </script>";

@@ -27,6 +27,8 @@ if($test_flag == 0)
         ans     VARCHAR(10)   
     );";
 
+
+
     /*Database is successfully created*/
     if ($conn->query($sqlQuery) === TRUE) {
         $database_flag=1;

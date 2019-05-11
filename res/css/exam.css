@@ -17,7 +17,6 @@ html,body{
     box-shadow: 2px 4px #888888;
  }
   #exam{
-    /*background-color: aqua;*/
     width: 98%;
     min-height:90vh;
     height: fit-content;   
@@ -25,35 +24,31 @@ html,body{
   }
 
   #question-answer{
-      /*background-color: red;*/
       width: 68%;
       height: auto;
       margin-top: 50px;
   }
   #questions{
-      /*background-color: blue;*/
       width: 100%;
       min-height: 150px;
       height: fit-content;
   }
   #answers{
-    /*background-color: green;*/
     width: 100%;
     height: fit-content;
+    
   }
+
   #question-attempt{
-    /*background-color: yellow;*/
     width: 28%;
     height: auto;
     margin-top: 50px;
   }
   #symbols{
-    /*background-color: orange;*/
     min-height:200px;height: fit-content;
   }
 
-  #question-mark{
-    /*background-color: orchid;*/
+  #mark-question{
     height:auto;
     text-align: center;
   }
@@ -79,11 +74,6 @@ html,body{
       color:white;
   }
 
-input{
-    margin-top: 12px;
-    margin-bottom: 12px;
-
-}
 .all-button{
     margin-top:20px;
     color:white;
@@ -93,15 +83,13 @@ input{
     border: 0px;
     font-size: 21px;
 }
-.all-button:hover{
+.all-button-hover:hover{
     background-color: #ACDB01;
     color: #252B2A;
     font-weight: bold;
     box-shadow: 1px 1px black;
 }
 .sample-mark{
-    /*padding: 10px;
-    margin: 10px;*/
     border: solid 2px    black;
     border-radius: 100px;
     width: 50px;
@@ -118,18 +106,19 @@ input{
 
 
 /*Visited Questions Button*/
-#visited{
-    background-color: #252B2A;
+#visited, .visited{
+    background-color: rgb(172, 19, 172);     
+    /*#252B2A;*/
     color:white;
 }
 
 /*Attempted Questions Button*/
-#attempted{
+#attempted, .attempted{
     background-color: rgb(10, 102, 10);
     color:white;
 }
-#mark-review{
-    background-color: rgb(9, 9, 209);
+#mark-review, .mark-review{
+    background-color: rgb(58, 58, 211);
     color:white;
 }
 
@@ -154,7 +143,9 @@ input{
     float: left;
 }
 
-
+.disable-button{
+    opacity: 0.5;
+}    
 /*
  #nav-bar a{
     visibility: hidden;

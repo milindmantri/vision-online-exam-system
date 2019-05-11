@@ -1,0 +1,13 @@
+Number,Question,option1,option2,option3,option4,Answer
+1, Maximum degree of any vertex in a simple graph of vertices n is,2n+1,n,n+1,n-1,d
+2,Apriory algorithm analysis does not include −,Time complexity,space complexity,program complexity,None of above,c
+3," Time required to merge two sorted lists of size m and n, is",O(m+n),O(m|n),O(m),O(n),"a
+"
+4,Heap is an example of,complete binary tree, spanning tree, sparse tree,binary search tree,a
+5,Binary search tree is an example of complete binary tree with special attributes.,BST takes care of complete binary tree properties., BST does not care about complete binary tree properties.,"None of above
+",It depends upon the input.,b
+6, An adaptive sorting algorithm −, adapts to new computers.,takes advantage of already sorted elements., takes input which is already sorted.,none of the above.,b
+7,What data structure can be used to check if a syntax has balanced paranthesis ?, queue,tree,list,stack,d
+8, By using which method sorting is not possible?,Insertion,Selection,Deletion,Exchange,c
+9,Out of 4 distinct keys how many distinct primary keys can be created?,5,45,20,14,d
+10,From the following sorting algorithms which algorithm needs the minimum number of swaps,Bubble sort,Quick sort,Selection sort,Merge sort,c

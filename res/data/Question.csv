@@ -1,7 +1,19 @@
-Number | Question | option1|option2|option3|option4|Ans
-1|A car is traveling 5/7 of its actual speed cover 42 km in 1 hr 40 min 48 sec.Find actual speed of car|20 km/hr|25 km/hr|30 km/hr|35 km/hr|d
-2|January 1, 2008 is Tuesday. What day of the week lies on Jan 1, 2009? |Monday|Wednesday|Thursday|Tuesday|c
-3|A tank is 25 m long| 12m wide and 6m deep.The cost of plastering its wall and bottom at 75 paise per sq meter is:|456|558|458|668|b
-4|In a mixture 60 litres, the ratio of milk and water 2 : 1. If this ratio is to be 1 : 2, then the quanity of water to be further added is:|20 liter|30 liter|40 liter|50 liter|d
-5|The cube root of .000216 is:|0.6|0.66|0.06|7|c
-6|The banker's gain on a bill due 1 year hence at 12% per annum is Rs. 6. The true discount is: |Rs 77|Rs 70|Rs 50|Rs 60|c
+Number,Question,option1,option2,option3,option4,Ans
+,A car is traveling 5/7 of its actual speed cover 42 km in 1 hr 40 min 48 sec.Find actual speed of car,20 km/hr,25 km/hr,30 km/hr,35 km/hr,d
+2,"January 1, 2008 is Tuesday. What day of the week lies on Jan 1, 2009? ",Monday,Wednesday,Thursday,Tuesday,c
+3,"A tank is 25 m long, 12m wide and 6m deep.The cost of plastering its wall and bottom at 75 paise per sq meter is:",456,558,458,668,b
+4,"  
+
+In a mixture 60 litres, the ratio of milk and water 2 : 1. If this ratio is to be 1 : 2, then the quanity of water to be further added is:",20 liter,30 liter,40 liter,50 liter,d
+5,The cube root of .000216 is:,0.6,0.66,0.06,7,c
+6,"  
+
+The banker's gain on a bill due 1 year hence at 12% per annum is Rs. 6. The true discount is: ",Rs 77,Rs 70,Rs 50,Rs 60,c
+7," 	
+
+Find the greatest number that will divide 43, 91 and 183 so as to leave the same remainder in each case. ",4,7,9,13,a
+8,"The least perfect square, which is divisible by each of 21, 36 and 66 is:",213444,241333,214333,243331,a
+9,"If A = x% of y and B = y% of x, then which of the following is true?",A is smaller than B.,A is greater than B,"If x is smaller than y, then A is greater than B.",None of these,d
+10," 	
+
+3 pumps, working 8 hours a day, can empty a tank in 2 days. How many hours a day must 4 pumps work to empty the tank in 1 day? ",9,10,11,12,d

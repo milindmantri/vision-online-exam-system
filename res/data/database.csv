@@ -1,0 +1,24 @@
+Number ,Question,option1,option2,option3,option4,Answer
+,"         
+
+Properties that describe the characteristics of entities are called:",entities.,attributes.,identifiers.,relationships.,b
+2," 	
+
+One solution to the multivalued dependency constraint problem is to:","split the relation into two relations, each with a single theme.",change the theme.,create a new theme.,add a composite key.,a
+3,"If an XML document does not have a DTD, then by definition it is:",not-type-valid.,type-valid.,type-valid.," 	
+None of the above is correct.
+
+",a
+4," 	
+
+The SQL keyword(s) ________ is used with wildcards.",LIKE only,IN only,NOT IN only,IN and NOT IN,a
+5,Which of the following situation requires the use of ID-dependent entities?,Association relationships only,Multivalued attributes only,Archetype/instance relationships only,,d
+6,Which of the following refers to an entity in which the identifier of one entity includes the identifier of another entity?,Weak entity,Strong entity,ID-dependent entity,All of the above use ID dependent entities,c
+7,"What standard, protocol or language was generalized to become a standard protocol for sending messages of any type, using any protocol?"," 	
+SOAP",SGML,SQL,ADO,a
+8," 	
+
+A shared database should:",be accurate and available.,provide for backup and recovery.,be secure.,All of above,d
+9,"The three-schema components include all, but:"," 	
+internal schema.",conceptual schema.,programming schema.,external scheme,c
+10,Which of the following is true concerning the standard network protocol for connecting a client to a Web or database server via the Internet?,Both TCP and IP are needed.,TCP is needed but IP is not needed.,TCP is not needed but IP is needed.,None of them,a

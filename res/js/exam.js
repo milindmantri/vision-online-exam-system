@@ -1,15 +1,18 @@
-function questionNumbers(){
+function questionNumbers(total){
+    //console.log(total_questions);
     var x="",i;
-    for(i=1; i<=10; i++)
+    for(i=1; i<=total; i++)
     {
-        x=x+"<button id='ques"+i+"' class='mark'>"+i+"</button>";
+        x=x+"<button type='button' id='ques"+i+"' class='mark' onclick='markVisited("+i+")'>"+i+"</button>";
         if(i%4==0)
         x=x+"<br>";
     }
-    x=x+"<div><button class='all-button'>Submit Test</button></div>";
-    document.getElementById("question-mark").innerHTML = x;
-
+    x=x+"<div><button class='all-button all-button-hover'>Submit Test</button></div>";
+    document.getElementById("mark-question").innerHTML = x;
 }
+
+
+
 /*
 function countDownTimer(){
     <!-- Display the countdown timer in an element -->
@@ -46,4 +49,4 @@ var x = setInterval(function() {
 }, 1000);
 </script>
 }*/
-questionNumbers();
+

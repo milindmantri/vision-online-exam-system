@@ -36,13 +36,14 @@ select{
     
 }
 
-.color-button{
+.remove-default-appearance{
     /*change arrow of select button*/
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+}
 
-
+.color-button{
     margin-top: 5px;
     margin-bottom: 5px;
     margin-left: 10px;
@@ -53,15 +54,14 @@ select{
     border-radius: 7px;   
     align-self: center;
     justify-self: center;
-    text-align: center;
-    
-    
+    text-align: center;    
 }
 #start-test{
     padding: 8px;
     font-size: 19px;
     border: solid 1px #242B2D;
     box-shadow:2px 2px #242B2D;
+    width: 100px !important;
 }
 #start-test:hover{
     font-weight: bold;
