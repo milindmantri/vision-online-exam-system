@@ -54,9 +54,14 @@
 
 <?php
 
+    
 include_once "./config/dbconnection.php";
 session_start();
 
+if($_SESSION['exam-over'])
+{
+    header("Location: ./index.php");
+}
 $subject_name = $_SESSION['subject-name'];
 $test_name = $_SESSION['test-name'];
 

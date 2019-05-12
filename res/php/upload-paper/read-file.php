@@ -23,7 +23,17 @@ if(isset($_POST['upload-paper']))
         
         // Convert each line into the local $data variable
         while (($data = fgetcsv($h, 1000, ",")) !== FALSE) 
-        {		
+        {	
+            //Save ans in the form of numbers	
+            if($data[6]=='a'||$data[6]=='A')
+                $data[6]=1;
+            else if($data[6]=='b'||$data[6]=='B')
+                $data[6]=2;
+            else if($data[6]=='c'||$data[6]=='C')
+                $data[6]=3;
+            else if($data[6]=='d'||$data[6]=='D')
+                $data[6]=4;
+                
             /*SQL Query to insert data*/
             $sqlQuery = "INSERT INTO `$database_name` (id,ques,op1,op2,op3,op4,ans) VALUES 
             ('$data[0]','$data[1]','$data[2]','$data[3]','$data[4]','$data[5]','$data[6]')";

@@ -7,6 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Select Exam</title>
     <link rel="stylesheet" href="./res/css/select-exam.css" />
+
+    <!-- Snackbar Style Sheet and JavaScript File -->
+    <link rel="stylesheet" href="./res/css/snackbar.css" />
+    <script src="./res/js/snackbar.js"></script>
+
 </head>
 
 <body>
@@ -32,6 +37,8 @@
         </div>
     </div>
 
+    <!--snackbar to display if the candidate has already appeared for test-->
+    <div id="snackbar"></div> 
     <script src="./res/js/select-exam.js" type="text/javascript"></script>    
 </body>
 </html>

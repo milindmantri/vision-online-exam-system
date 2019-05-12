@@ -7,6 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Result</title>
     <link rel="stylesheet" href="./res/css/result.css" />
+
+<script type="text/javascript" >
+    window.location.hash="no-back-button";
+    window.location.hash="Again-No-back-button";//again because google chrome don't insert first hash into history
+    window.onhashchange=function(){window.location.hash="";}
+</script>
+
 </head>
 
 <body>
@@ -93,10 +100,10 @@ while($question = $paper->fetch_row())
 {
     $i++;
 
-    if($answer[$i]==0){
+    if($answer[$i]!=0){
         $questions_attempted++;
     }
-    else if($question[6]==$answer[$i]){
+    if($question[6]==$answer[$i]){
         $answers_correct++;
     }
     else{
@@ -114,9 +121,8 @@ echo "<script>fillDetails('$total_question','$questions_attempted','$answers_cor
 $sqlQuery = "INSERT INTO results VALUES ('$user[2]','$subject_name','$test_name','$total_question','$questions_attempted','$answers_correct','$total_marks ','$marks_obtained','$percentage')";
 $conn->query($sqlQuery);
 
-
-
 $paper->close();
 $conn -> close();
 
+$_SESSION['exam-over']="Exam Over";
 ?>
