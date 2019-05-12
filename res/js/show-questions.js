@@ -106,7 +106,23 @@ function setTotalQuestions(num)
 }
 
 function calculateScore() { 
-   window.location.href = "result.php?answer=" + answer_marked; 
+
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", 'calculate-score.php', true);
+
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+    xhr.onreadystatechange = function() {
+        if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+            if (xhr.response == 'true') {
+                window.location.href = 'result.php';
+            } else {
+                alert('Please try submitting again!');
+            }
+        }
+    }
+    xhr.send("answer=" + answer_marked);
+//    window.location.href = "result.php?answer=" + answer_marked; 
   }
 
 window.onload = function() {
