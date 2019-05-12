@@ -15,7 +15,7 @@
     include_once './res/html/header-exam.html'
     ?>
     <div id="container">
-        <form id="exam" class="flex-container flex-direction-row " method="get">
+        <form id="exam" class="flex-container flex-direction-row" method="post">
             <div id="question-answer" name="question-answer" class="flex-container flex-direction-column margin-10 box box-shadow">
                 <div id="questions">
                     <span> Q- </span> <span id="ques-no"> </span> <br> <span id="mcq-question"></span>
@@ -35,7 +35,7 @@
 
             <div id="question-attempt" class="flex-container flex-direction-column margin-10 box box-shadow">
                 <div id="symbols" class="box">
-                    <div class="sample-div"><span>Visited:</span> <button id="visited" class='sample-mark'>0</button> </div>
+                    <div class="sample-div"> <span>Visited:</span> <button id="visited" class='sample-mark'>0</button> </div>
                     <div class="sample-div"> <span>Attempted: </span> <button id="attempted" class='sample-mark'>0</button> </div>
                     <div class="sample-div"> <span>Not Visited:</span> <button id="not-attempted" class='sample-mark'>0</button></div>
                     <div class="sample-div"> <span>Mark for Review:</span> <button id="mark-review" class='sample-mark'>0</button></div>
@@ -74,11 +74,11 @@ $paper = $conn->query($sqlQuery);
 
 //Find total number of questions
 $total_questions = $paper->num_rows;
-
 echo "<script> setTotalQuestions($total_questions); </script>";
 echo "<script> questionNumbers($total_questions); </script>";
 
 $paper->close();
 $conn -> close();
+
 
 ?>

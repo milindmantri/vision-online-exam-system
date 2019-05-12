@@ -1,5 +1,5 @@
 function questionNumbers(total){
-    //console.log(total_questions);
+
     var x="",i;
     for(i=1; i<=total; i++)
     {
@@ -7,7 +7,7 @@ function questionNumbers(total){
         if(i%4==0)
         x=x+"<br>";
     }
-    x=x+"<div><button class='all-button all-button-hover'>Submit Test</button></div>";
+    x=x+"<div> <button name='submit-test' type='button' class='all-button all-button-hover' onclick='calculateScore()'>Submit Test</button></div>";
     document.getElementById("mark-question").innerHTML = x;
 }
 
@@ -49,4 +49,3 @@ var x = setInterval(function() {
 }, 1000);
 </script>
 }*/
-

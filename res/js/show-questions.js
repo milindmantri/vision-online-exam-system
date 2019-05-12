@@ -13,7 +13,7 @@ function changeQuestion(direction){
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {              
                document.getElementById("question-answer").innerHTML = this.responseText;
-               if(answer_marked[ques_no]!=undefined)
+               if(answer_marked[ques_no]!=0)
                {
                 var optionID="#option"+answer_marked[ques_no].toString();
                 var op = document.querySelector(optionID);
@@ -43,8 +43,13 @@ function changeQuestion(direction){
                 
                 option_selected = 0;
                 
-                
+               // console.log(answer_marked);
+
+                //var myjson = JSON.stringify(answer_marked);
+
+               // console.log(myjson);
             }
+            
         };
         if(direction==1)
             ques_no++;
@@ -95,8 +100,14 @@ function clearResponse()
 function setTotalQuestions(num)
 {
     total_questions=num;
+    var j;
+    for(j=0;j<=num;j++)
+        answer_marked[j]=0;
 }
 
+function calculateScore() { 
+   window.location.href = "result.php?answer=" + answer_marked; 
+  }
 
 window.onload = function() {
     changeQuestion(1);
