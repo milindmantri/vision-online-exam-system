@@ -60,4 +60,6 @@ $conn -> close();
 
 $_SESSION['exam-over']="Exam Over";
 
+echo 'true';
+
 ?>
